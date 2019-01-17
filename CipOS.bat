@@ -301,7 +301,7 @@ echo.
 
 if %app%==calc (
 cls
-start C:\Users\PC\Desktop\CipOS\CipOS\Calculator.bat
+start %~dp0\Calculator.bat
 pause>nul
 goto desktop
 ) else (
@@ -411,31 +411,12 @@ echo Loading.
 ping localhost -n 4 >nul
 cls
 echo uTorrent Started!
-    start C:\Users\PC\AppData\Roaming\uTorrent\uTorrent.exe
+    start %~dp0\uTorrent.exe
     exit
 ) else (
 echo.
 )
 
-if %app%==virus (
-cls
-echo Loading.
-ping localhost -n 2 >nul
-cls
-echo Loading..
-ping localhost -n 2 >nul
-cls
-echo Loading...
-ping localhost -n 2 >nul
-cls
-echo Loading.
-ping localhost -n 4 >nul
-cls
-    start C:\Users\PC\Desktop\Others\Testuti.bat
-    exit
-) else (
-echo.
-)
 
 if %app%==google  (
 cls
@@ -522,26 +503,6 @@ echo Krunker Started!
 echo.
 )
 
-if %app%==chillpop (
-cls
-echo Loading.
-ping localhost -n 2 >nul
-cls
-echo Loading..
-ping localhost -n 2 >nul
-cls
-echo Loading...
-ping localhost -n 2 >nul
-cls
-echo Loading.
-ping localhost -n 4 >nul
-cls
-echo Chillpop Youtube Started!
-    start https://www.youtube.com/results?search_query=chillpop
-    exit
-) else (
-echo.
-)
 
 if %app%==settings (
 cls
@@ -579,31 +540,12 @@ echo Loading.
 ping localhost -n 4 >nul
 cls
 echo WhatsApp Started!
-    start C:\Users\PC\AppData\Local\WhatsApp\app-0.3.557\WhatsApp.exe
+    start %~dp0\WhatsApp.exe
     exit
 ) else (
 echo.
 )
 
-if %app%==vulpea (
-cls
-echo Loading.
-ping localhost -n 2 >nul
-cls
-echo Loading..
-ping localhost -n 2 >nul
-cls
-echo Loading...
-ping localhost -n 2 >nul
-cls
-echo Loading.
-ping localhost -n 4 >nul
-cls
-    start E:\Foxy-Jumper-2\Foxy-Jumper-2---Winter-Adventures\engine.exe
-    exit
-) else (
-echo.
-)
 
 if %app%==teamviewer (
 cls
@@ -620,7 +562,7 @@ echo Loading.
 ping localhost -n 4 >nul
 cls
 echo Team Viewer Started!
-    start C:\Program Files (x86)\TeamViewer\TeamViewer.exe
+    start %~dp0\TeamViewer.exe
     exit
 ) else (
 echo.
@@ -668,8 +610,5 @@ cls
 echo Closing.
 ping localhost -n 2 >nul
 cls
-start C:\Users\PC\Desktop\CipOS\CipOS\CipOS.bat
+start %~dp0\CipOS.bat
 exit
-
-
-pause
