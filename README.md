@@ -17,7 +17,7 @@ Q: How do i change my username and password?
 
 A: You cannot for now but soon updates will have this implemented!
 
-
+---------------------------------------------------------------------------
 
 Q: Can i see the source code?
 
