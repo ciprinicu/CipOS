@@ -11,7 +11,7 @@ Password: admin
 
 
 
-#FAQ
+# FAQ
 
 Q: How do i change my username and password?
 A: You cannot for now but soon updates will have this implemented!
