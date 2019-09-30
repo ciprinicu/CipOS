@@ -33,14 +33,14 @@ echo search
 echo CipDoac v1 booting on...
 echo Chrome 69.0.3497.100 on CipDoac 64-bit
 
-if EXIST C:\Users\PC\Desktop\CipOS\data\bios.dll (
+if EXIST C:\Users\%username%\Desktop\CipOS\data\bios.dll (
 echo bios ... ready
 ) else (
 goto sysfail
 )
 ping localhost -n 2 >nul
 
-if EXIST C:\Users\PC\Desktop\CipOS\data\settings.dll (
+if EXIST C:\Users\%username%\Desktop\CipOS\data\settings.dll (
 echo settings ... ready
 ) else (
 goto sysfail2
@@ -48,7 +48,7 @@ goto sysfail2
 
 ping localhost -n 2 >nul
 
-if EXIST C:\Users\PC\Desktop\CipOS\data\modules.dll (
+if EXIST C:\Users\%username%\Desktop\CipOS\data\modules.dll (
 echo modules ... ready
 ) else (
 goto sysfail2
@@ -56,7 +56,7 @@ goto sysfail2
 
 ping localhost -n 3 >nul
 
-if EXIST C:\Users\PC\Desktop\CipOS\data\CipOS.dll (
+if EXIST C:\Users\%username%\Desktop\CipOS\data\CipOS.dll (
 echo system ... ready
 ) else (
 goto sysfail
