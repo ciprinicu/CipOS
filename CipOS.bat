@@ -56,7 +56,7 @@ goto sysfail2
 
 ping localhost -n 3 >nul
 
-if EXIST C:\Users\PC\Desktop\CipOS\data\CipOS.xex (
+if EXIST C:\Users\PC\Desktop\CipOS\data\CipOS.dll (
 echo system ... ready
 ) else (
 goto sysfail
