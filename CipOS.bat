@@ -164,7 +164,7 @@ set /p "Choice=Command: "
 if %Choice% == 1 goto Calc
 if %Choice% == 2 goto TEXT
 if %Choice% == 3 goto startup
-if %Choice% == 4 start explorer.exe & exit
+if %Choice% == 4 exit
 if %Choice% == 5 goto HELP
 if %Choice% == 6 goto LoginMenuAfterBoot
 if %Choice% == 7 goto UPDINF
